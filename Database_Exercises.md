@@ -6,4 +6,5 @@ SELECT * FROM goal;
 
 ### Tehtävä 2
 select name from airport where iso_country = "FI";
+
 ![Tehtävä2](Images/Tentti2_Tehtävä2.png)
