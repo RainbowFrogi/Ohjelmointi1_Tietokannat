@@ -2,8 +2,8 @@
 
 ### Tehtävä 1
 SELECT * FROM goal; 
-![Tehtävä1](Tentti2_Tehtävä1.png)
+![Tehtävä1](Images/Tentti2_Tehtävä1.png)
 
 ### Tehtävä 2
 select name from airport where iso_country = "FI";
-![Tehtävä2](Tentti2_Tehtävä2.png)
+![Tehtävä2](Images/Tentti2_Tehtävä2.png)
