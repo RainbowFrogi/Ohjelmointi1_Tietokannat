@@ -1,0 +1,9 @@
+# Yhteen tauluun kohdistuvien kyselyiden harjoitukset
+
+### Tehtävä 1
+SELECT * FROM goal; 
+![Tehtävä1](Tentti2_Tehtävä1.png)
+
+### Tehtävä 2
+SELECT * FROM esimerkki WHERE kentta = 'arvo' 
+![Tehtävä2](Tentti2_Tehtävä2.png)
