@@ -43,3 +43,55 @@ SELECT co2_consumed FROM game WHERE screen_name = 'Ilkka';
 select co2_budget from game where screen_name = "Ilkka";
 
 ![Tehtävä9](Images/Tentti2_Tehtävä9.png)
+
+# WHERE-osan liitosehto harjoitukset
+
+### Tehtävä 1
+SELECT c.name AS "country name", a.name AS "airport name" FROM country c JOIN airport a ON c.iso_country = a.iso_country WHERE a.iso_country = 'IS';
+
+![Tehtävä1](Images/Tentti3_Tehtävä1.png)
+
+### Tehtävä 2
+SELECT a.name AS "airport name" FROM airport a WHERE iso_country = 'FR' AND type = 'large_airport';
+
+![Tehtävä2](Images/Tentti3_Tehtävä2.png)
+
+### Tehtävä 3
+where c.continent = a.continent AND c.name = "Antarctica"
+
+![Tehtävä3](Images/Tentti3_Tehtävä3.png)
+
+### Tehtävä 4
+SELECT a.elevation_ft FROM airport a, game g WHERE a.gps_code = g.location AND g.screen_name = "Heini";
+
+![Tehtävä4](Images/Tentti3_Tehtävä4.png)
+
+### Tehtävä 5
+SELECT a.elevation_ft * 0.3048 AS elevation_m FROM airport a, game g WHERE a.gps_code = g.location AND g.screen_name = "Heini";
+
+![Tehtävä5](Images/Tentti3_Tehtävä5.png)
+
+### Tehtävä 6
+SELECT a.name FROM airport a, game g WHERE a.gps_code = g.location AND g.screen_name = "Ilkka";
+
+![Tehtävä6](Images/Tentti3_Tehtävä6.png)
+
+### Tehtävä 7
+SELECT c.name FROM airport a, country c, game g WHERE a.gps_code = g.location AND a.iso_country = c.iso_country AND c.iso_country = "GB" AND g.screen_name = "Ilkka";
+
+![Tehtävä7](Images/Tentti3_Tehtävä7.png)
+
+### Tehtävä 8
+select co2_budget from game where screen_name = "Ilkka";
+
+![Tehtävä8](Images/Tentti3_Tehtävä8.png)
+
+### Tehtävä 9
+select co2_budget from game where screen_name = "Ilkka";
+
+![Tehtävä9](Images/Tentti3_Tehtävä9.png)
+
+### Tehtävä 10
+select co2_budget from game where screen_name = "Ilkka";
+
+![Tehtävä10](Images/Tentti3_Tehtävä10.png)
