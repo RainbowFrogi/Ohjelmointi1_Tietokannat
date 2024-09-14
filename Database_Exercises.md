@@ -87,11 +87,11 @@ select name from goal w, goal_reached gr, game ga where gr.game_id = ga.id and g
 ![Tehtävä8](Images/Tentti3_Tehtävä8.png)
 
 ### Tehtävä 9
-select co2_budget from game where screen_name = "Ilkka";
+SELECT name FROM airport, game WHERE airport.ident = game.location AND game.screen_name = "Ilkka";
 
 ![Tehtävä9](Images/Tentti3_Tehtävä9.png)
 
 ### Tehtävä 10
-select co2_budget from game where screen_name = "Ilkka";
+SELECT country.name FROM airport, game, country WHERE airport.ident = game.location AND airport.iso_country = country.iso_country AND country.name = "United Kingdom" AND game.screen_name = "Ilkka";
 
 ![Tehtävä10](Images/Tentti3_Tehtävä10.png)
