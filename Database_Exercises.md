@@ -82,7 +82,7 @@ SELECT c.name FROM airport a, country c, game g WHERE a.gps_code = g.location AN
 ![Tehtävä7](Images/Tentti3_Tehtävä7.png)
 
 ### Tehtävä 8
-select co2_budget from game where screen_name = "Ilkka";
+select name from goal w, goal_reached gr, game ga where gr.game_id = ga.id and gr.goal_id = w.id and ga.screen_name = "Heini";
 
 ![Tehtävä8](Images/Tentti3_Tehtävä8.png)
 
