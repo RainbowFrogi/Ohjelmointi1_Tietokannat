@@ -95,3 +95,20 @@ SELECT name FROM airport, game WHERE airport.ident = game.location AND game.scre
 SELECT country.name FROM airport, game, country WHERE airport.ident = game.location AND airport.iso_country = country.iso_country AND country.name = "United Kingdom" AND game.screen_name = "Ilkka";
 
 ![Tehtävä10](Images/Tentti3_Tehtävä10.png)
+
+# Join harjoitukset
+
+### Tehtävä 1
+SELECT c.name as "country name", a.name AS "airport name" FROM country c INNER JOIN airport a ON c.iso_country = a.iso_country WHERE c.iso_country = "FI" AND a.scheduled_service = "yes";
+
+![Tehtävä1](Images/Tentti4_Tehtävä1.png)
+
+### Tehtävä 2
+SELECT g.screen_name, a.name FROM game g INNER JOIN airport a ON g.location = a.ident;
+
+![Tehtävä2](Images/Tentti4_Tehtävä2.png)
+
+### Tehtävä 3
+SELECT g.screen_name, c.name FROM game g INNER JOIN airport a ON g.location = a.ident INNER JOIN country c ON a.iso_country = c.iso_country;
+
+![Tehtävä3](Images/Tentti4_Tehtävä3.png)
