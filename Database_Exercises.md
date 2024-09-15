@@ -120,3 +120,13 @@ SELECT g.screen_name, a.name FROM game g INNER JOIN airport a ON g.location = a.
 SELECT g.screen_name, c.name FROM game g INNER JOIN airport a ON g.location = a.ident INNER JOIN country c ON a.iso_country = c.iso_country;
 
 ![Tehtävä3](Images/Tentti4_Tehtävä3.png)
+
+### Tehtävä4
+SELECT a.name, g.screen_name FROM airport a LEFT JOIN game g ON a.ident = g.location WHERE a.name LIKE "%Hels%" ORDER BY g.screen_name DESC;
+
+![Tehtävä4](Images/Tentti4_Tehtävä4.png)
+
+### Tehtävä 5
+SELECT go.name, ga.screen_name FROM goal go LEFT JOIN goal_reached gr ON go.id = gr.goal_id LEFT JOIN game ga ON ga.id = gr.game_id;
+
+![Tehtävä5](Images/Tentti4_Tehtävä5.png)
