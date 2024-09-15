@@ -129,4 +129,4 @@ SELECT a.name, g.screen_name FROM airport a LEFT JOIN game g ON a.ident = g.loca
 ### Tehtävä 5
 SELECT go.name, ga.screen_name FROM goal go LEFT JOIN goal_reached gr ON go.id = gr.goal_id LEFT JOIN game ga ON ga.id = gr.game_id;
 
-![Tehtävä5](Images/Tentti4_Tehtävä5.png)
+![Tehtävä5](Images/Tentti4_tehtävä5.png)
