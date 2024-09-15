@@ -44,6 +44,10 @@ select co2_budget from game where screen_name = "Ilkka";
 
 ![Tehtävä9](Images/Tentti2_Tehtävä9.png)
 
+
+
+
+
 # WHERE-osan liitosehto harjoitukset
 
 ### Tehtävä 1
@@ -95,6 +99,10 @@ SELECT name FROM airport, game WHERE airport.ident = game.location AND game.scre
 SELECT country.name FROM airport, game, country WHERE airport.ident = game.location AND airport.iso_country = country.iso_country AND country.name = "United Kingdom" AND game.screen_name = "Ilkka";
 
 ![Tehtävä10](Images/Tentti3_Tehtävä10.png)
+
+
+
+
 
 # Join harjoitukset
 
