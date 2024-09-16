@@ -40,7 +40,7 @@ SELECT co2_consumed FROM game WHERE screen_name = 'Ilkka';
 ![Tehtävä8](Images/Tentti2_Tehtävä8.png)
 
 ### Tehtävä 9
-select co2_budget from game where screen_name = "Ilkka";
+select distinct co2_budget from game;
 
 ![Tehtävä9](Images/Tentti2_Tehtävä9.png)
 
