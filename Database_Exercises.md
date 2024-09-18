@@ -100,10 +100,6 @@ SELECT country.name FROM airport, game, country WHERE airport.ident = game.locat
 
 ![Tehtävä10](Images/Tentti3_Tehtävä10.png)
 
-
-
-
-
 # Join harjoitukset
 
 ### Tehtävä 1
@@ -130,3 +126,30 @@ SELECT a.name, g.screen_name FROM airport a LEFT JOIN game g ON a.ident = g.loca
 SELECT go.name, ga.screen_name FROM goal go LEFT JOIN goal_reached gr ON go.id = gr.goal_id LEFT JOIN game ga ON ga.id = gr.game_id;
 
 ![Tehtävä5](Images/Tentti4_tehtävä5.png)
+
+# Sisäkysely harjoitukset
+
+### Tehtävä 1
+SELECT name FROM country WHERE iso_country IN ( SELECT iso_country FROM airport WHERE name LIKE 'Satsuma%');
+
+![Tehtävä1](Images/Tentti5_Tehtävä1.png)
+
+### Tehtävä 2
+SELECT name FROM airport WHERE iso_country in (SELECT iso_country FROM country WHERE name = "Monaco");
+
+![Tehtävä2](Images/Tentti5_Tehtävä2.png)
+
+### Tehtävä 3
+SELECT screen_name FROM game WHERE id IN ( SELECT game_id FROM goal_reached WHERE goal_id = 7);
+
+![Tehtävä3](Images/Tentti5_Tehtävä3.png)
+
+### Tehtävä 4
+SELECT name FROM country WHERE iso_country NOT IN (SELECT iso_country FROM airport);
+
+![Tehtävä4](Images/Tentti5_Tehtävä4.png)
+
+### Tehtävä 5
+SELECT name FROM goal WHERE id NOT IN (SELECT goal_id FROM goal_reached WHERE game_id = 1);
+
+![Tehtävä5](Images/Tentti5_Tehtävä5.png)
